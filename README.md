@@ -3,6 +3,9 @@
 multiple instances of an application.
 
 ```
+from lru_cache_pubsub_cache_clear import lru_cache_pubsub_cache_clear
+
+
 @lru_cache_pubsub_cache_clear(redis_connection, channel_name, sleep_time)
 @lru_cache
 def cache_data(key, value)
