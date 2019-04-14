@@ -14,5 +14,7 @@ from django_redis import get_redis_connection
 def cache_data(key, value)
     ...
 ```
+Here `sleep_time` is interval (in seconds) between pubsub message checks.
+
 
 Then every time one of app instances calls `cache_data.cache_clear()` it will be executed on all connected instances.
