@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lru-cache-pubsub-cache-clear",
-    version="0.0.2",
+    version="0.0.3",
     author="Petr Glotoov",
     author_email="pglotov@yahoo.com",
     description="redis based cache_clear() for lru_cache",
