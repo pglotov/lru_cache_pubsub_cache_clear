@@ -11,8 +11,9 @@ from django_redis import get_redis_connection
                               channel_name='CHANNEL_CACHE_CLEAR',
                               sleep_time=3)
 @lru_cache
-def cache_data(key, value)
+def get_data(key)
     ...
+    return value
 ```
 Here `sleep_time` is interval (in seconds) between pubsub message checks.
 
