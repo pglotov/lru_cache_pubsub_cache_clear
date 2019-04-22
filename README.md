@@ -1,6 +1,6 @@
 # lru_cache_pubsub_cache_clear
 `lru_cache_pubsub_cache_clear` is a decorator to broadcast `cache_clear()` calls to `lru_cache` across
-multiple instances of an application. This allows for local cache access speed. Example:
+multiple instances of an application. This allows for local cache access speed and redis-like centralized cache invalidation. Example:
 
 ```
 from lru_cache_pubsub_cache_clear import lru_cache_pubsub_cache_clear
