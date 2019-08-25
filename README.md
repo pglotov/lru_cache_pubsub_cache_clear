@@ -9,7 +9,7 @@ from django_redis import get_redis_connection
 
 @lru_cache_pubsub_cache_clear(get_redis_connection=get_redis_connection,
                               channel_name='CHANNEL_CACHE_CLEAR')
-@lru_cache
+@lru_cache(maxsize=1000000)
 def get_data(key)
     ...
     return value
